@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dedede"
+    tools:context=".fragments.status">
+
+    <TextView
+        android:id="@+id/noStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:text="No Status Available\n\nHow it works?\n\n1. View status on WhatsApp (full video)\n\n2. Then open this app and save them  "/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/statusRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>
